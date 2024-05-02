@@ -1,0 +1,325 @@
+Season,Team,Avg_Pts,Avg_ELO,Name
+2023/24,inter-miami-cf,6.8,76,Drake Callender
+2022/23,inter-miami-cf,6.8,74,Drake Callender
+2021/22,inter-miami-cf,7,62,Drake Callender
+2020/21,inter-miami-ii,3.25,40,Drake Callender
+2019/20,inter-miami-cf,0,25,Drake Callender
+2018/19,california-golden-bears,5,25,Drake Callender
+2023/24,columbus-crew,6.8,76,Patrick Schulte
+2022/23,columbus-crew,7.1,72,Patrick Schulte
+2021/22,columbus-crew-ii,7,41.5,Patrick Schulte
+2020/21,saint-louis-billikens,6.1,32,Patrick Schulte
+2018/19,saint-louis,5.6,25,Patrick Schulte
+2023/24,nottingham-forest-fc,3.4,72,Matthew Charles Turner
+2022/23,arsenal,6.3,71,Matthew Charles Turner
+2021/22,new-england-revolution,5.8,73,Matthew Charles Turner
+2020/21,new-england-revolution,7,75,Matthew Charles Turner
+2019/20,new-england-revolution,7,70,Matthew Charles Turner
+2018/19,new-england-revolution,6.8,64,Matthew Charles Turner
+2017/18,new-england-revolution,6.6,58,Matthew Charles Turner
+2016/17,richmond-kickers,3.3,43.5,Matthew Charles Turner
+2015/16,richmond-kickers,6.4,36,Matthew Charles Turner
+2023/24,fc-cincinnati,6.4,74,Roman Celentano
+2022/23,fc-cincinnati,7.2,72,Roman Celentano
+2021/22,fc-cincinnati,6.300000000000001,50.5,Roman Celentano
+2020/21,indiana-hoosiers,7.7,39,Roman Celentano
+2018/19,indiana-hoosiers,5.9,25,Roman Celentano
+2023/24,cardiff-city-fc,3.25,71,Ethan Shea Horvath
+2022/23,luton-town-fc,7.1,72,Ethan Shea Horvath
+2021/22,nottingham-forest-fc,6.3,54,Ethan Shea Horvath
+2020/21,club-brugge,5.4,60,Ethan Shea Horvath
+2019/20,club-brugge,6.7,75,Ethan Shea Horvath
+2018/19,club-brugge,7.2,75,Ethan Shea Horvath
+2017/18,club-brugge,6.9,68,Ethan Shea Horvath
+2016/17,club-brugge,6,65,Ethan Shea Horvath
+2015/16,molde-fk,6.7,68,Ethan Shea Horvath
+2014/15,molde-fk,7.1,65,Ethan Shea Horvath
+2013/14,molde-fk,7,30,Ethan Shea Horvath
+2012/13,molde-fk,0,25,Ethan Shea Horvath
+2023/24,psv,7.8,82,Sergiño Gianni Dest
+2022/23,milan,4.5,74,Sergiño Gianni Dest
+2021/22,barcelona,5.8,77,Sergiño Gianni Dest
+2020/21,barcelona,5.55,73,Sergiño Gianni Dest
+2019/20,ajax,6.35,70,Sergiño Gianni Dest
+2018/19,jong-ajax,6.75,57,Sergiño Gianni Dest
+2017/18,ajax-sub19,6.1,41,Sergiño Gianni Dest
+2016/17,ajax-sub-17,7,36,Sergiño Gianni Dest
+2023/24,crystal-palace-fc,5.9,69.5,Christopher Jeffrey Richards
+2022/23,crystal-palace-fc,5.35,66,Christopher Jeffrey Richards
+2021/22,tsg-1899-hoffenheim,5.7,67.5,Christopher Jeffrey Richards
+2020/21,tsg-1899-hoffenheim,5.766666666666667,61,Christopher Jeffrey Richards
+2019/20,bayern-munchen,5.85,59,Christopher Jeffrey Richards
+2018/19,bayern-munchen-sub-19,3.25,42.5,Christopher Jeffrey Richards
+2017/18,fc-dallas,0,25,Christopher Jeffrey Richards
+2023/24,fulham,6.5,80,Timothy Michael Ream
+2022/23,fulham,7,82,Timothy Michael Ream
+2021/22,fulham,7.3,74,Timothy Michael Ream
+2020/21,fulham,5.8,74,Timothy Michael Ream
+2019/20,fulham,7,75,Timothy Michael Ream
+2018/19,fulham,6.1,74,Timothy Michael Ream
+2017/18,fulham,7.1,74,Timothy Michael Ream
+2016/17,fulham,6.6,70,Timothy Michael Ream
+2015/16,fulham,6.1,70,Timothy Michael Ream
+2014/15,bolton-wanderers-fc,6.6,71,Timothy Michael Ream
+2013/14,bolton-wanderers-fc,6.1,63.5,Timothy Michael Ream
+2012/13,bolton-wanderers-fc,5.65,65.5,Timothy Michael Ream
+2011/12,bolton-wanderers-fc,6.3,68,Timothy Michael Ream
+2010/11,red-bull-new-york,6.9,66,Timothy Michael Ream
+2009/10,red-bull-new-york,7.2,61,Timothy Michael Ream
+2023/24,red-bull-new-york,5.7,76,John Michael Tolkin
+2022/23,red-bull-new-york,7.4,78,John Michael Tolkin
+2021/22,red-bull-new-york,7,71,John Michael Tolkin
+2020/21,red-bull-new-york,5.9,50,John Michael Tolkin
+2019/20,new-york-red-bulls-ii,2.75,36,John Michael Tolkin
+2018/19,new-york-red-bulls-ii,5.8,36,John Michael Tolkin
+2023/24,fc-cincinnati,6.6,76,Miles Gordon Robinson
+2022/23,atlanta-united-fc,7.1,75,Miles Gordon Robinson
+2021/22,atlanta-united-fc,5.8,74,Miles Gordon Robinson
+2020/21,atlanta-united-fc,7.2,76,Miles Gordon Robinson
+2019/20,atlanta-united-fc,6.1,66,Miles Gordon Robinson
+2018/19,atlanta-united-fc,7,69,Miles Gordon Robinson
+2017/18,atlanta-united-fc,5.85,46,Miles Gordon Robinson
+2016/17,charleston-battery,5.45,35,Miles Gordon Robinson
+2023/24,borussia-monchengla,6.4,76,Joseph Michael Scally
+2022/23,borussia-monchengla,6.6,73,Joseph Michael Scally
+2021/22,borussia-monchengla,5.8,68,Joseph Michael Scally
+2020/21,borussia-monchengladbach-ii,6,41,Joseph Michael Scally
+2019/20,new-york-city,4.4,34,Joseph Michael Scally
+2017/18,new-york-city,4,25,Joseph Michael Scally
+2023/24,philadelphia-union,5.8,75,Nathan Harriel
+2022/23,philadelphia-union,6.5,73,Nathan Harriel
+2021/22,bethlehem-steel,6.9,63.5,Nathan Harriel
+2020/21,philadelphia-union,4.9,41,Nathan Harriel
+2019/20,bethlehem-steel,5.8,42,Nathan Harriel
+2018/19,bethlehem-steel,5.8,39,Nathan Harriel
+2023/24,nashville-sc,5.8,76,Shaquell Kwame Moore
+2022/23,nashville-sc,6.9,77,Shaquell Kwame Moore
+2021/22,nashville-sc,6.05,68.5,Shaquell Kwame Moore
+2020/21,tenerife,6.6,69,Shaquell Kwame Moore
+2019/20,tenerife,6.6,65,Shaquell Kwame Moore
+2018/19,levante,4.233333333333333,60.333333333333336,Shaquell Kwame Moore
+2017/18,levante,6.35,57.5,Shaquell Kwame Moore
+2016/17,levante-b,6.7,52,Shaquell Kwame Moore
+2015/16,real-oviedo-b,6.3,39.5,Shaquell Kwame Moore
+2013/14,dallas-reservas,4.1,25,Shaquell Kwame Moore
+2023/24,new-england-revolution,5.7,74,DeJuan Jones
+2022/23,new-england-revolution,7,75,DeJuan Jones
+2021/22,new-england-revolution,6.8,74,DeJuan Jones
+2020/21,new-england-revolution,7.2,71,DeJuan Jones
+2019/20,new-england-revolution,6.2,59,DeJuan Jones
+2018/19,new-england-revolution,6.2,53,DeJuan Jones
+2023/24,celtic-fc,6.9,76,Cameron Carter-Vickers
+2022/23,celtic-fc,7.7,78,Cameron Carter-Vickers
+2021/22,celtic-fc,6.199999999999999,73,Cameron Carter-Vickers
+2020/21,afc-bournemouth,3.4,66,Cameron Carter-Vickers
+2019/20,luton-town-fc,6.4,65.5,Cameron Carter-Vickers
+2018/19,swansea-city-afc,6,68,Cameron Carter-Vickers
+2017/18,ipswich-town-fc,4.633333333333334,55.666666666666664,Cameron Carter-Vickers
+2016/17,tottenham-hotspur-sub21,5.733333333333333,42.333333333333336,Cameron Carter-Vickers
+2015/16,tottenham-hotspur-fc,3.05,42,Cameron Carter-Vickers
+2014/15,tottenham-hotspur-sub21,5.699999999999999,38,Cameron Carter-Vickers
+2023/24,palermo,6.5,72.5,Kristoffer Lund Hansen
+2022/23,hacken,7.3,71,Kristoffer Lund Hansen
+2021/22,hacken,3.5,55.5,Kristoffer Lund Hansen
+2020/21,hacken,5.9,47.5,Kristoffer Lund Hansen
+2019/20,midtjylland-sub19,5.550000000000001,39.5,Kristoffer Lund Hansen
+2018/19,midtjylland-sub19,6.25,37.5,Kristoffer Lund Hansen
+2017/18,midtylland-sub17,6,34,Kristoffer Lund Hansen
+2023/24,atlanta-united-fc,6.3,72,Caleb Ryan Wiley
+2022/23,atlanta-united-fc,6.7,71,Caleb Ryan Wiley
+2021/22,atlanta-united-fc,5.7,54,Caleb Ryan Wiley
+2020/21,atlanta-united-ii,6.2,43,Caleb Ryan Wiley
+2019/20,atlanta-united-ii,5.9,38,Caleb Ryan Wiley
+2023/24,fc-dallas,5.3,72,Nkosi Tafari Burgess
+2022/23,fc-dallas,6.9,72,Nkosi Tafari Burgess
+2021/22,fc-dallas,5.5,58,Nkosi Tafari Burgess
+2020/21,north-texas,6.6,56.5,Nkosi Tafari Burgess
+2019/20,north-texas,3.4,31.5,Nkosi Tafari Burgess
+2018/19,seattle-redhawks,5.6,25,Nkosi Tafari Burgess
+2023/24,fc-cincinnati,5.7,70,Ian Murphy
+2022/23,fc-cincinnati,5.55,60,Ian Murphy
+2021/22,fc-cincinnati,5.8,46.666666666666664,Ian Murphy
+2020/21,duke-blue-devils,5.3,30,Ian Murphy
+2023/24,wolfsburg,5.5,65,Kevin Alexander Paredes
+2022/23,wolfsburg,4.6,56,Kevin Alexander Paredes
+2021/22,wolfsburg,4.3,57,Kevin Alexander Paredes
+2020/21,dc-united,6.7,59,Kevin Alexander Paredes
+2019/20,loudoun-united,5.3,35,Kevin Alexander Paredes
+2018/19,loudoun-united,4.6,25,Kevin Alexander Paredes
+2023/24,juventus-fc,6.8,84,Weston James Earl McKennie
+2022/23,leeds-united-afc,6.05,77,Weston James Earl McKennie
+2021/22,juventus-fc,6.3,78,Weston James Earl McKennie
+2020/21,juventus-fc,6.1,74,Weston James Earl McKennie
+2019/20,schalke-04,6,72,Weston James Earl McKennie
+2018/19,schalke-04,6.3,71,Weston James Earl McKennie
+2017/18,schalke-04,5.6,60,Weston James Earl McKennie
+2016/17,schalke-04,5.55,39,Weston James Earl McKennie
+2023/24,columbus-crew,7.1,78,Aidan Morris
+2022/23,columbus-crew,7.1,74,Aidan Morris
+2021/22,columbus-crew,5.9,52.5,Aidan Morris
+2020/21,columbus-crew,5.4,42,Aidan Morris
+2019/20,columbus-crew,4.9,41,Aidan Morris
+2018/19,indiana-hoosiers,5.7,25,Aidan Morris
+2023/24,betis,6.3,78,João Lucas De Souza Cardoso
+2022/23,internacional,6.2,75,João Lucas De Souza Cardoso
+2021/22,internacional,5.8,67,João Lucas De Souza Cardoso
+2020/21,internacional,5.4,58,João Lucas De Souza Cardoso
+2019/20,internacional,5.3,43,João Lucas De Souza Cardoso
+2018/19,internacional,5,30,João Lucas De Souza Cardoso
+2023/24,milan,5.5,76,Yunus Dimoara Musah
+2022/23,valencia-cf,5.8,76,Yunus Dimoara Musah
+2021/22,valencia-cf,5.5,69,Yunus Dimoara Musah
+2020/21,valencia-cf,5.5,65,Yunus Dimoara Musah
+2019/20,valencia-cf-juvenil,5.5,39.5,Yunus Dimoara Musah
+2018/19,arsenal-sub18,7,36,Yunus Dimoara Musah
+2017/18,arsenal-sub18,5.4,25,Yunus Dimoara Musah
+2023/24,psv,5.85,71.5,Malik Leon Tillman
+2022/23,glasgow-rangers-fc,6.9,69,Malik Leon Tillman
+2021/22,fc-bayern-munchen-ii,5.85,54.5,Malik Leon Tillman
+2020/21,fc-bayern-munchen-ii,2.55,53.5,Malik Leon Tillman
+2019/20,bayern-munchen,5.033333333333333,53.666666666666664,Malik Leon Tillman
+2018/19,bayern-munich-sub-17,6.75,44,Malik Leon Tillman
+2017/18,bayern-munich-sub-17,6.9,38,Malik Leon Tillman
+2023/24,philadelphia-union,6,75,Jack Ryan McGlynn
+2022/23,philadelphia-union,6.2,73,Jack Ryan McGlynn
+2021/22,bethlehem-steel,5.800000000000001,57,Jack Ryan McGlynn
+2020/21,philadelphia-union,4.9,42,Jack Ryan McGlynn
+2019/20,bethlehem-steel,6.6,39,Jack Ryan McGlynn
+2023/24,1-fc-union-berlin,5.1,77,Brenden Russell Aaronson
+2022/23,leeds-united-sub-21,6.4,79,Brenden Russell Aaronson
+2021/22,salzburgo,6.9,78,Brenden Russell Aaronson
+2020/21,salzburgo,7.3,73,Brenden Russell Aaronson
+2019/20,bethlehem-steel,5.800000000000001,64.5,Brenden Russell Aaronson
+2018/19,philadelphia-union,6.3,58,Brenden Russell Aaronson
+2017/18,bethlehem-steel,6.5,41,Brenden Russell Aaronson
+2016/17,bethlehem-steel,4.6,25,Brenden Russell Aaronson
+2023/24,new-york-city,5.8,74,James Hoban Sands
+2022/23,new-york-city,6.15,71,James Hoban Sands
+2021/22,glasgow-rangers-fc,5.7,70,James Hoban Sands
+2020/21,new-york-city,6.8,71,James Hoban Sands
+2019/20,new-york-city,6.5,61,James Hoban Sands
+2018/19,new-york-city,6.5,55,James Hoban Sands
+2017/18,louisville-city,5.949999999999999,33,James Hoban Sands
+2016/17,new-york-city,4.2,25,James Hoban Sands
+2023/24,heidenheim,6.8,74,Lennard Maloney
+2022/23,heidenheim,7,67,Lennard Maloney
+2021/22,borussia-dortmund,5.4,57,Lennard Maloney
+2020/21,borussia-dortm-ii,7.2,54,Lennard Maloney
+2019/20,chemnitzer,4.9,42,Lennard Maloney
+2017/18,union-berlin-u19,5.5,43,Lennard Maloney
+2016/17,union-berlin-u19,7.6,42,Lennard Maloney
+2015/16,fc-union-berlin-sub-15,7,36,Lennard Maloney
+2023/24,celta,6.1,75,Lucas Daniel De La Torre
+2022/23,celta,5.7,68,Lucas Daniel De La Torre
+2021/22,heracles,6.5,66,Lucas Daniel De La Torre
+2020/21,heracles,6.4,61,Lucas Daniel De La Torre
+2019/20,fulham,5.666666666666667,50,Lucas Daniel De La Torre
+2018/19,fulham-sub23,5.433333333333334,48.333333333333336,Lucas Daniel De La Torre
+2017/18,fulham-sub23,5.05,45.5,Lucas Daniel De La Torre
+2016/17,fulham,5.55,39,Lucas Daniel De La Torre
+2015/16,fulham-sub21,6.3,25,Lucas Daniel De La Torre
+2014/15,fulham-sub21,4.3,25,Lucas Daniel De La Torre
+2023/24,juventus-fc,5.4,76,Timothy Tarpeh Weah
+2022/23,lillestrom,6,76,Timothy Tarpeh Weah
+2021/22,lillestrom,5.7,72,Timothy Tarpeh Weah
+2020/21,lillestrom,5.4,64,Timothy Tarpeh Weah
+2019/20,lillestrom,4.4,65,Timothy Tarpeh Weah
+2018/19,celtic-fc,5.833333333333334,56.333333333333336,Timothy Tarpeh Weah
+2017/18,paris-saint-germain-fc,5.3,37.333333333333336,Timothy Tarpeh Weah
+2016/17,psg-sub-19,5.5,30,Timothy Tarpeh Weah
+2023/24,seattle-sounders-fc,5.9,73,Cristian Roldán León
+2022/23,seattle-sounders-fc,7,74,Cristian Roldán León
+2021/22,seattle-sounders-fc,6.7,76,Cristian Roldán León
+2020/21,seattle-sounders-fc,7.5,77,Cristian Roldán León
+2019/20,seattle-sounders-fc,7.1,75,Cristian Roldán León
+2018/19,seattle-sounders-fc,7.4,76,Cristian Roldán León
+2017/18,seattle-sounders-fc,7,74,Cristian Roldán León
+2016/17,seattle-sounders-fc,7.4,74,Cristian Roldán León
+2015/16,seattle-sounders-fc,6.8,68,Cristian Roldán León
+2014/15,seattle-sounders-ii,4.75,36.5,Cristian Roldán León
+2023/24,los-angeles-football-club,6.9,73,Timothy Tillman
+2022/23,los-angeles-football-club,5.95,66.5,Timothy Tillman
+2021/22,greuther-furth,6,60,Timothy Tillman
+2020/21,greuther-furth,4.8,47,Timothy Tillman
+2019/20,greuther-furth,5.1,48,Timothy Tillman
+2018/19,nurnberg-ii,4.85,52,Timothy Tillman
+2017/18,fc-bayern-munchen-ii,3.8333333333333335,52.333333333333336,Timothy Tillman
+2016/17,bayern-munchen-sub-19,7.8,47,Timothy Tillman
+2015/16,bayern-munchen-sub-19,6.066666666666666,34,Timothy Tillman
+2023/24,real-salt-lake,5.6,70,Diego Ángel Luna
+2022/23,real-monarchs,8.3,59.5,Diego Ángel Luna
+2021/22,real-monarchs,5.4,49.666666666666664,Diego Ángel Luna
+2020/21,el-paso-locomotive,6.8,48,Diego Ángel Luna
+2023/24,columbus-crew,6.5,70,Sean Zawadzki
+2022/23,columbus-crew,6.1,58,Sean Zawadzki
+2021/22,columbus-crew-ii,6.45,50,Sean Zawadzki
+2020/21,georgetown-hoyas,5.9,36,Sean Zawadzki
+2018/19,georgetown-hoyas,6.8,32,Sean Zawadzki
+2023/24,nottingham-forest-fc,4.55,66.5,Giovanni Alejandro Reyna
+2022/23,borussia-dortmund,5.6,67,Giovanni Alejandro Reyna
+2021/22,borussia-dortmund,5.6,73,Giovanni Alejandro Reyna
+2020/21,borussia-dortmund,6.3,71,Giovanni Alejandro Reyna
+2019/20,borussia-dortmund-sub19,6.25,44,Giovanni Alejandro Reyna
+2023/24,seattle-sounders-fc,5.6,66,Joshua Atencio
+2022/23,tacoma-defiance,5.8,59.5,Joshua Atencio
+2021/22,tacoma-defiance,5.5,55.5,Joshua Atencio
+2020/21,tacoma-defiance,5.25,53,Joshua Atencio
+2019/20,seattle-sounders-fc,4.5,38.5,Joshua Atencio
+2018/19,seattle-sounders-fc,3.15,36.5,Joshua Atencio
+2017/18,seattle-sounders-ii,4.8,25,Joshua Atencio
+2023/24,saint-louis-city,5.9,63,Aziel Jackson
+2022/23,saint-louis-ii,5.6,53.5,Aziel Jackson
+2021/22,minnesota-united,5.55,45.5,Aziel Jackson
+2020/21,carolina-railhawks,2.85,30.5,Aziel Jackson
+2018/19,blagnac,4.4,25,Aziel Jackson
+2023/24,milan,7.1,85,Christian Pulisic
+2022/23,chelsea-fc,4.9,81,Christian Pulisic
+2021/22,chelsea-fc,6.3,81,Christian Pulisic
+2020/21,chelsea-fc,5.9,80,Christian Pulisic
+2019/20,chelsea-fc,6.7,81,Christian Pulisic
+2018/19,borussia-dortmund,6.4,83,Christian Pulisic
+2017/18,borussia-dortmund,6.3,80,Christian Pulisic
+2016/17,borussia-dortmund,6.1,71,Christian Pulisic
+2015/16,borussia-dortmund-sub19,6.5,48.5,Christian Pulisic
+2014/15,borussia-dortmund-sub-17,7.3,36,Christian Pulisic
+2023/24,whitecaps,6.8,79,Brian White
+2022/23,whitecaps,7.5,79,Brian White
+2021/22,whitecaps,6.4,71,Brian White
+2020/21,whitecaps,6.15,65,Brian White
+2019/20,red-bull-new-york,5.9,61,Brian White
+2018/19,new-york-red-bulls-ii,6.449999999999999,51.5,Brian White
+2017/18,red-bull-new-york,5.75,45,Brian White
+2023/24,america,6.9,79,Alejandro Zendejas Saavedra
+2022/23,america,7,75,Alejandro Zendejas Saavedra
+2021/22,america-sub20,6.333333333333333,70.66666666666667,Alejandro Zendejas Saavedra
+2020/21,necaxa,6.6,65,Alejandro Zendejas Saavedra
+2019/20,guadalajara-sub20,5.65,57,Alejandro Zendejas Saavedra
+2018/19,guadalajara,5.85,59.5,Alejandro Zendejas Saavedra
+2017/18,zacatepec,6.4,60,Alejandro Zendejas Saavedra
+2016/17,guadalajara,5.4,43,Alejandro Zendejas Saavedra
+2014/15,fc-dallas,4.7,32,Alejandro Zendejas Saavedra
+2013/14,dallas-reservas,4.1,25,Alejandro Zendejas Saavedra
+2023/24,monaco,6.4,77,Folarin Balogun
+2022/23,stade-reims,7.6,78,Folarin Balogun
+2021/22,middlesbrough-fc,6.4,61.25,Folarin Balogun
+2020/21,arsenal,6.366666666666666,54,Folarin Balogun
+2019/20,arsenal,4.2,50.666666666666664,Folarin Balogun
+2018/19,arsenal-sub21,5.7,41.666666666666664,Folarin Balogun
+2017/18,arsenal-sub23,6.2,38,Folarin Balogun
+2016/17,arsenal-sub18,5,25,Folarin Balogun
+2023/24,orlando-city-us,5.7,67,Duncan Mcguire
+2022/23,orlando-city-us,6.7,67,Duncan Mcguire
+2020/21,creighton-university,5.3,30,Duncan Mcguire
+2023/24,psv,4.6,66.5,Ricardo Daniel Pepi
+2022/23,fc-groningen,5.5,67.5,Ricardo Daniel Pepi
+2021/22,fc-augsburg,5,69,Ricardo Daniel Pepi
+2020/21,fc-dallas,6.8,68,Ricardo Daniel Pepi
+2019/20,fc-dallas,4.9,47,Ricardo Daniel Pepi
+2018/19,fc-dallas,6.05,42,Ricardo Daniel Pepi
+2023/24,fc-dallas,4.8,65,Bernard Kamungo
+2022/23,north-texas,5.65,56.5,Bernard Kamungo
+2021/22,fc-dallas,6.1,52.5,Bernard Kamungo
+2020/21,north-texas,6.1,43,Bernard Kamungo
+2023/24,new-england-revolution,5.2,55,Esmir Bajraktarević
+2022/23,new-england-revolution-ii,6.4,48,Esmir Bajraktarević
+2021/22,new-england-revolution,5.15,38,Esmir Bajraktarević
