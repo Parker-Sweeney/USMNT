@@ -1,3 +1,5 @@
+# The purpose of this data is to scrape player data from BeSoccer that can be used for further analysis
+
 library(rvest)
 library(xml2)
 library(chromote)
