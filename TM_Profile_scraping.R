@@ -1,59 +1,57 @@
-#Haleigh Allyn, Parker Sweeney
-#Final Project: Transfermarkt Profile Scraping Code
-
+# The purpose of this code is to scrape player information from Transfermarkt's profile section
 
 library(xml2)
 
-#Haleigh Allyn User Agent
+# Set User Agent
 user_agent <- "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15"
 
+# Set Current Page
 current_page <- "https://www.transfermarkt.com/vereinigte-staaten/startseite/verein/3505"
 
+# Read HTML
 page<-read_html(current_page, user_agent)
 Sys.sleep(5)
 
-#Check to make sure the page loads
+# Make sure page loads
 class(page)
 page
 
-#Attempting to get the first player name and link in the list of players
+# Get the first player name and link in player list
 player_profile_links <- xml_attr(xml_find_all(page, "//*[@id='yw1']//tr/td[contains(@class, 'hauptlink')]/a"), "href")
 
-# Combine player names and links into a data frame
+# Combine player names and links into a df
 player_profile_links <- data.frame(player_profile_links = player_profile_links)
 
-# Print the extracted player data
+# Print extracted player data
 print(player_profile_links)
 
-#This code contains two links (profile and market value) 
-#we only need the profile one, so Im going to clean the data frame for the links we need
+# This code contains two links (profile and market value) 
+# we only need the profile one, so this will clean the data frame for the links we need
 
-#Remove unnecessary rows (even rows)
+# Remove unnecessary rows (even rows)
 player_profile_links <- player_profile_links[c(TRUE, FALSE), , drop = FALSE]
 player_profile_links <- as.data.frame(player_profile_links)
 
-#Make full link
+# Make full link
 base_url <- "https://www.transfermarkt.com"
 player_profile_links$player_profile_links <- paste(base_url, player_profile_links$player_profile_links, sep = "")
 
-
-
 ###########################################
 
-
-# Function to scrape player details from a given URL
+# Function to Scrape Player Details
 scrape_player_details <- function(url) {
-  # Read the HTML content from the URL
+  # Read the HTML
   page <- read_html(url, user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36")
   
-  # Initialize variables to store scraped data
+  # Set variables to store scraped data
   birth_date <- NA
   nationality <- NA
   birthplace <- NA
   height <- NA
   position <- NA
   
-  # Attempt to scrape each element and handle errors
+  # Scrape Each Element (Note: Contains Error Handlers for Debugging)
+  # Had issues with this section, hence the error handlers
   tryCatch({
     birth_date <- trimws(page %>%
                            html_nodes("span[itemprop='birthDate']") %>%
@@ -107,18 +105,18 @@ scrape_player_details <- function(url) {
   return(player_details)
 }
 
-# Initialize an empty list to store player details data frames
+# Set an empty list to store player details data frames
 all_player_details <- list()
 
 # Loop through each player profile link
 for (url in player_profile_links$player_profile_links) {
-  # Scrape player details for the current URL
+  # Scrape player details
   player_details <- scrape_player_details(url)
   
-  # Append the player details to the list
+  # Append player details to the list
   all_player_details <- c(all_player_details, list(player_details))
   
-  # Pause execution for 3 seconds
+  # Pause
   Sys.sleep(3)
 }
 
@@ -128,12 +126,9 @@ all_player_details_df <- do.call(rbind, all_player_details)
 # Print the data frame
 print(all_player_details_df)
 
-
-
 ###############################################################
 
-
-# Reset row names of player_profile_links to sequential integers
+# Reset row names of player_profile_links
 rownames(player_profile_links) <- NULL
 
 # Merge the data frames
@@ -144,23 +139,15 @@ merged_profile_data <- merged_profile_data[, -c(which(names(merged_profile_data)
 
 # Add new name column
 merged_profile_data$Name <- gsub("https://www.transfermarkt.com/|/profil/spieler/.*", "", merged_profile_data$player_profile_links)
-merged_profile_data$Name <- gsub("-", " ", merged_profile_data$Name)  # Replace hyphens with spaces
-merged_profile_data$Name <- tolower(merged_profile_data$Name)  # Convert to lowercase
-merged_profile_data$Name <- sapply(strsplit(merged_profile_data$Name, " "), function(x) paste(toupper(substring(x, 1, 1)), substring(x, 2), sep = "", collapse = " "))  # Capitalize first letter of each word
+merged_profile_data$Name <- gsub("-", " ", merged_profile_data$Name)
+merged_profile_data$Name <- tolower(merged_profile_data$Name)
+merged_profile_data$Name <- sapply(strsplit(merged_profile_data$Name, " "), function(x) paste(toupper(substring(x, 1, 1)), substring(x, 2), sep = "", collapse = " "))
 
 # Print the modified data frame
 print(merged_profile_data)
-
 
 # Extract Player ID from player_profile_links column
 merged_profile_data$Player_ID <- gsub(".*/", "", merged_profile_data$player_profile_links)
 
 # Print the modified data frame
 print(merged_profile_data)
-
-
-
-
-
-
-
