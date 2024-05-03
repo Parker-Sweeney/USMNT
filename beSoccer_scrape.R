@@ -7,13 +7,13 @@ library(dplyr)
 library(readr)
 
 
-# Set the user agent string
+# Set user agent
 user_agent <- "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 
-# Define the URL
+# Set URL
 url <- "https://www.besoccer.com/team/squad/seleccion-estados-unidos"
 
-# Read the HTML content from the URL
+# Read the HTML
 page <- read_html(url)
 
 # Get Links
@@ -40,6 +40,7 @@ final_df <- data.frame(
 
 urls <- player_links
 
+# Get correct link and name for each player
 for(url in urls) {
   print(url)
   ######################################################
@@ -56,13 +57,13 @@ for(url in urls) {
   
   url <- gsub("/player", "/player/career-path", url)
   
-  # Read the HTML content from the URL
+  # Read the HTML
   page <- read_html(url)
   
-  # Navigate to the table
+  # Navigate to table
   table <- html_node(page, "table.table_parents")
   
-  # Extract rows with the class 'parent_row'
+  # Extract rows with the class of parent_row
   rows <- html_nodes(table, "tr.parent_row")
   
   # Extract values from the specified columns
@@ -71,7 +72,7 @@ for(url in urls) {
   pts_values <- html_text(html_nodes(rows, "td:nth-child(13)"))
   elo_values <- html_text(html_nodes(rows, "td:nth-child(14)"))
   
-  # Create a data frame with the extracted values
+  # Create a data frame
   base_df <- data.frame(
     Season = year_id,
     #Age = age_values,
@@ -79,10 +80,12 @@ for(url in urls) {
     ELO = as.numeric(elo_values),
     stringsAsFactors = FALSE
   )
-  
+
+  # Separate Season column to team and season columns
   split_df <- base_df %>%
     separate(Season, into = c("Team", "Season"), sep = "(-(?=\\d{4}/\\d{2}))", extra = "merge")
-  
+
+  # Gets final individual player df
   individual_player_df <- split_df %>%
     group_by(Season) %>%
     summarise(
@@ -92,9 +95,11 @@ for(url in urls) {
       .groups = 'drop'
     ) %>%
     arrange(desc(Season))
-  
+
+  # Adds player's name to df
   individual_player_df$Name <- player_name
-  
+
+  # Adds individual player's df to the overall df
   final_df <- rbind(final_df, individual_player_df)
   
 }
