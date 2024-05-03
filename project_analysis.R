@@ -122,8 +122,59 @@ plot <- ggplot(lm_data, aes(x = actual_market_value, y = predicted_market_value)
 # Print the plot
 print(plot)
 
-###############
+###############################
 
+#summary statistics of data_clean (as a whole)
+str(clean_data)
+summary(clean_data)
+
+#summary statistics for each position (that we have data for)
+position_summary <- clean_data %>%
+  group_by(position) %>%
+  summarise(
+    avg_market_value = mean(avg_market_value, na.rm = TRUE),
+    med_market_value = median(avg_market_value, na.rm = TRUE),
+    avg_points = mean(avg_points, na.rm = TRUE),
+    avg_elos = mean(avg_elos, na.rm = TRUE),
+    total_appearances = sum(total_appearances, na.rm = TRUE),
+    competition_count = sum(competition_count, na.rm = TRUE)
+  )
+
+# Boxplot for market value by position
+ggplot(clean_data, aes(x = position, y = avg_market_value)) +
+  geom_boxplot() +
+  labs(title = "Market Value by Position") +
+  scale_y_continuous(labels = dollar_format(prefix = "$", suffix = "", big.mark = ",")) +
+  theme_minimal()
+
+# Scatter plot of points vs. market value, colored by position
+ggplot(clean_data, aes(x = avg_points, y = avg_market_value, color = position)) +
+  geom_point() +
+  labs(title = "Avg Points vs. Market Value by Position") +
+  scale_y_continuous(labels = dollar_format(prefix = "$", suffix = "", big.mark = ",")) +
+  theme_minimal()
+
+# Line plot of market value over seasons by position
+ggplot(clean_data, aes(x = season, y = avg_market_value, color = position, group = position)) +
+  geom_line() +
+  labs(title = "Market Value Over Seasons by Position") +
+  scale_y_continuous(labels = dollar_format(prefix = "$", suffix = "", big.mark = ",")) +
+  theme_minimal()
+
+###
+
+#correlation analysis
+cor_results <- cor(clean_data %>%
+                     select(avg_market_value, avg_points, avg_elos, total_appearances), use = "complete.obs")
+cor_results
+
+# Multiple linear regression with other factors
+lm2 <- lm(avg_market_value ~ avg_points + total_appearances + position, data = clean_data)
+summary(lm2)
+
+
+
+##############################
 segment_data <- clean_data %>%
   select(-player_id,
          -season,
