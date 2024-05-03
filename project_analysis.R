@@ -216,3 +216,11 @@ plot_age <- ggplot(segment_data, aes(x = age, y = avg_market_value, color = tota
   scale_y_continuous(labels = dollar_format(prefix = "$", suffix = "", big.mark = ",")) +
   labs(title = "Market Value by Age")
 print(plot_age)
+
+# Ages Per Season Box Plot
+ggplot(clean_data, aes(x = factor(season), y = age)) +
+  geom_boxplot() +
+  labs(title = "Distribution of Player Ages per Season",
+       x = "Season",
+       y = "Age") +
+  theme_minimal()
