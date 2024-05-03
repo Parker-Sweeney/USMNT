@@ -1,4 +1,4 @@
-# The purpose of this code is to merge data frames created from different codes used for this project
+# The purpose of this code is to merge Transfermarkt data frames created from different codes used for this project
 
 library(dplyr)
 
