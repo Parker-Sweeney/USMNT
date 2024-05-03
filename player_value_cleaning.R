@@ -1,3 +1,5 @@
+# This code cleans the player valuations file so that it can be further used for analysis
+
 # Load necessary libraries
 library(dplyr)
 library(lubridate)
