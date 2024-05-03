@@ -6,16 +6,16 @@ library(fuzzyjoin)
 library(scales)
 
 
-# Read the data
+# Read data
 elo <- read_csv("player_elo_and_points.csv")
 valuations <- read_csv("modified_player_valuations.csv")
 player_profiles <- read_csv("player_profiles.csv")
 
-# Convert names to lower case before replacements
+# Convert names to lower case
 elo$Name <- tolower(elo$Name)
 player_profiles$Name <- tolower(player_profiles$Name)
 
-# Flexible replacement using regular expressions
+# Change Names
 player_profiles$Name <- gsub("\\bmatt\\b", "matthew", player_profiles$Name)
 player_profiles$Name <- gsub("\\bjoe\\b", "joseph", player_profiles$Name)
 elo$Name <- gsub("\\bjoo\\b", "johnny", elo$Name)
@@ -32,37 +32,36 @@ clean_names <- function(name) {
     str_squish()
 }
 
-# Apply cleaning after replacements
+# Apply cleaning
 elo$Name <- sapply(elo$Name, clean_names)
 player_profiles$Name <- sapply(player_profiles$Name, clean_names)
 
-# Extract first and last names to handle middle names
+# Extract first and last names
 get_first_last <- function(name) {
   parts <- unlist(str_split(name, "\\s+"))
   if (length(parts) > 1) {
     paste0(parts[1], " ", tail(parts, n=1))
   } else {
-    name  # return name as is if it doesn't have multiple parts
+    name
   }
 }
 
 elo$Name <- sapply(elo$Name, get_first_last)
 player_profiles$Name <- sapply(player_profiles$Name, get_first_last)
 
-# Exact match with cleaned and simplified names
+# Merge Data
 exact_match <- merge(elo, player_profiles, by = "Name")
 
-# Fuzzy matching on remaining unmatched names
+# Fuzzy match on unmatched names
 unmatched_elo <- anti_join(elo, exact_match, by = "Name")
 unmatched_profiles <- anti_join(player_profiles, exact_match, by = "Name")
 
-# Perform fuzzy matching
 fuzzy_match <- stringdist_inner_join(unmatched_elo, unmatched_profiles, by = "Name", max_dist = 2)
 
 # Combine exact matches and fuzzy matches
 elo_player_matched <- bind_rows(exact_match, fuzzy_match)
 
-# Rename Column Name
+# Rename Column Names
 valuations <- rename(valuations, Player_ID = player_id)
 valuations <- rename(valuations, Season = date)
 
@@ -88,6 +87,6 @@ final_df <- rename(final_df, League = player_club_domestic_competition_id)
 final_df <- final_df %>%
   rename_with(tolower, .cols = everything())
 
-# Change MV to currency (If wanted, commented out for now)
-final_df <- final_df %>%
-  mutate(market_value_in_eur = dollar_format(prefix = "€", big.mark = ",", decimal.mark = ".")(market_value_in_eur))
+# Change MV to currency (Ended up commenting out)
+#final_df <- final_df %>%
+#  mutate(market_value_in_eur = dollar_format(prefix = "€", big.mark = ",", decimal.mark = ".")(market_value_in_eur))
