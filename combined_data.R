@@ -1,4 +1,5 @@
-# The purpose of this code is to combine the data collected from other codes for this project
+# The purpose of this code is to combine the data collected from other codes for this project.
+# This will combine both sources (Transfermarkt and BeSoccer)
 
 library(readr)
 library(dplyr)
