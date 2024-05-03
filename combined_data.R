@@ -1,3 +1,5 @@
+# The purpose of this code is to combine the data collected from other codes for this project
+
 library(readr)
 library(dplyr)
 library(stringr)
