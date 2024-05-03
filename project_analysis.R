@@ -1,3 +1,6 @@
+# This code loads the combined data and adjusts it for easier analysis
+# This code analyzes data about the datasets Market Values, Ages, Positions, Seasons, and Appearances
+
 library(readr)
 library(dplyr)
 library(tidyverse)
